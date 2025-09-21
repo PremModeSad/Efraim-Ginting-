@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selamat Ulang Tahun Margaretha</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #fff;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      animation: bounce 2s infinite;
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: #fff;
+      margin-top: 10px;
+      animation: fadeIn 3s ease-in-out infinite alternate;
+    }
+
+    /* Animasi teks */
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0.4; }
+      100% { opacity: 1; }
+    }
+
+    /* Balon */
+    .balloon {
+      position: absolute;
+      bottom: -100px;
+      width: 60px;
+      height: 80px;
+      border-radius: 50%;
+      background: red;
+      animation: floatUp 10s linear infinite;
+    }
+
+    .balloon::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 20px;
+      background: #333;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(-110vh) scale(1.2); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <h1>🎂 Selamat Ulang Tahun, Etha chan🎀! 🎉</h1>
+  <p>Efraim tau ada orang lain di hati garet, jadi jangan merasa di kekang ya, semoga garet senang sama dia, love you(jangan ngerasa risih pliss)💖</p>
+
+  <!-- Balon -->
+  <div class="balloon" style="left: 20%; background: #ff4d6d; animation-delay: 0s;"></div>
+  <div class="balloon" style="left: 40%; background: #4da6ff; animation-delay: 3s;"></div>
+  <div class="balloon" style="left: 60%; background: #ffcc00; animation-delay: 5s;"></div>
+  <div class="balloon" style="left: 80%; background: #66ff99; animation-delay: 7s;"></div>
+</body>
+</html>
